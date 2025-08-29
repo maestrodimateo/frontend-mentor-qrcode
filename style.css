@@ -54,7 +54,7 @@ body {
 }
 
 .card-text {
-    margin-top: 1.5rem;
+    margin-top: 1.6rem;
 }
 
 h1 {
@@ -68,7 +68,7 @@ h1 {
 
 p {
     line-height: 140%;
-    font-size: 0.9375rem;
+    font-size: 0.93rem;
     letter-spacing: 0.2px;
     color: var(--slate-500);
     width: 95%;
