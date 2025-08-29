@@ -5,6 +5,7 @@
     --slate-500: hsl(216, 15%, 48%);
     --slate-300: hsl(212, 45%, 89%);
     --outfit: "Outfit", sans-serif;
+    --box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.0477);
 }
 
 * {
@@ -37,12 +38,13 @@ body {
 
 .card {
     background-color: white;
-    width: 320px;
-    height: 499px;
+    width: 90%;
+    max-width: 320px;
+    aspect-ratio: 320 / 499;
     border-radius: 20px;
-    padding: 16px 16px 40px 16px;
+    padding: clamp(1rem, 1vw, 1rem) clamp(1rem, 1vw, 2rem) clamp(2.5rem, 2.5vw, 4rem) clamp(1rem, 1vw, 2rem);
     text-align: center;
-    box-shadow: 0px 10px 20px hsl(218, 44%, 22%, 0.2);
+    box-shadow: var(--box-shadow);
 }
 
 .qr-code {
@@ -52,7 +54,8 @@ body {
 }
 
 h1 {
-    margin-top: 24px;
+    margin-block-start: clamp(1.5rem, 2vw, 3rem);
+    margin-block-end: 16px;
     line-height: 120%;
     font-size: 22px;
     letter-spacing: 0px;
@@ -60,9 +63,8 @@ h1 {
 }
 
 p {
-    margin-top: 16px;
     line-height: 140%;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.2px;
     color: var(--slate-500);
 }
